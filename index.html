@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maths Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <Form  id="form">
+        <div id="opa"> <h4>Score: <span id="score">00</span></h4>
+        <h3 class="question" id="question">Multiply 1 by 1</h3>
+        <input type="number" id="input" placeholder="Enter your answer" autofocus autocomplete="off" maxlength="3">
+        <button class="btn" id="btn" type="submit">Check</button> 
+    </div>
+        <div id="end">Your score is 00</div>
+     </Form>
+     <script>var $input = $('input')
+        $input.keyup(function(e) {
+            var max = 5;
+            if ($input.val().length > max) {
+                $input.val($input.val().substr(0, max));
+            }
+        });</script>
+    <script src="index.js"></script>
+</body>
+</html>

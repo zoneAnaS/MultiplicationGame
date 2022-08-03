@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(mathsBG.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+form{
+    position: absolute;
+    top:200px;
+    right: 150px;
+    background-color: rgba(0, 251, 255,0.8);
+    padding: 50px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    border-radius:20px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 70px;
+    text-shadow: 0 0 5px rgb(48, 34, 34);
+}
+form h4{
+    position:absolute;
+    top: 40px;
+    color: blueviolet;
+    right: 50px;
+    text-shadow: 0 0 10px rgb(255, 255, 255);
+    font-size: 50px;
+
+}
+form h4 span{
+    color: rgb(81, 0, 255);
+    text-shadow: 0 0 5px rgb(255, 255, 255);
+}
+form h3{
+    margin-top: 55px;
+    margin-left: 50px;
+    color: rgb(217, 0, 255);
+    
+}
+form input{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    height:70px;
+    font-size: 40px;
+    box-sizing: border-box;
+    font-weight: bolder;
+    padding: 5px;
+    color: rgb(136, 0, 255);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
+    border-radius: 50px;
+    background-color: rgb(255, 255, 100);
+    border: 5px solid rgb(128, 0, 255);
+}
+input::placeholder{
+    color: rgb(1, 214, 15);
+}
+.btn{
+    width: 100%;
+    text-align: center;
+    height:70px;
+    box-sizing: border-box;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    border-radius: 50px;
+    font-weight: bolder;
+    font-size: 30px;
+    margin-top:20px;
+    cursor: pointer;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0,0.5);
+    text-transform: uppercase;
+    background-color: rgb(255, 0, 251);
+    border: 5px solid rgb(0, 0, 0);
+    transition: 0.5s;
+    
+}
+.btn:hover{
+    box-shadow: 0px 0px 20px rgb(0, 255, 0);
+    border: 5px solid rgb(40, 80, 0);
+    background-color: rgb(0, 255, 0);
+    color: rgb(255, 0, 255);
+}
+#end {
+        z-index: 20;
+        position: absolute;
+        color: green;
+        text-shadow: 0 0 5px rgb(0, 0, 0);
+        opacity: 0;
+}
+#opa{
+    opacity: 1;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@media (max-width:800px){
+    body{
+        background-image: url(mobileBG.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100wh;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    form{
+        position: static;
+        padding: 10px;
+        margin: 15px;
+        font-size: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: rgb(196, 255, 251);
+    }
+    input{
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+    }
+    input::placeholder{
+        position: relative;
+        bottom:5px;
+        font-size: 20px;
+    }
+    .btn{
+        width:200px;
+        position: relative;
+        left: 65px;
+        font-size: 25px;
+    }
+    form h4{
+        top: 200px;
+    right: 35%;
+    border-radius: 5px;
+    padding: 5px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color:rgb(196, 255, 251);
+    font-size:25px;
+    }
+    form h3{
+    margin-left: 30px;
+    }
+
+}
+@media (max-width:100px){
+    body{
+        
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    form{
+        position: static;
+
+}}
