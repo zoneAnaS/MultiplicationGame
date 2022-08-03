@@ -28,8 +28,9 @@ form{
     text-shadow: 0 0 5px rgb(48, 34, 34);
 }
 form h4{
-    position:absolute;
-    top: 40px;
+    position:relative;
+    top: 20px;
+    left: 500px;
     color: blueviolet;
     right: 50px;
     text-shadow: 0 0 10px rgb(255, 255, 255);
@@ -120,7 +121,7 @@ input[type=number] {
     justify-content: center;
     }
     form{
-        position: static;
+        position:static;
         padding: 10px;
         margin: 15px;
         font-size: 30px;
@@ -145,14 +146,8 @@ input[type=number] {
         font-size: 25px;
     }
     form h4{
-        top: 200px;
-    right: 35%;
-    border-radius: 5px;
-    padding: 5px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    background-color:rgb(196, 255, 251);
+    
+    left: 35%;
     font-size:25px;
     }
     form h3{
